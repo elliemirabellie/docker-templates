@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>postgres-alpine</Name>
+  <Repository>postgres:alpine</Repository>
+  <Registry>https://hub.docker.com/_/postgres</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>update-me</Support>
+  <Project>https://www.postgresql.org/</Project>
+  <Overview>Template to run the official alpine based Docker Image for Postgres.</Overview>
+  <Category>Productivity: Network:Management</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/elliemirabellie/docker-templates/master/images/postgres-alpine.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624961609</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Template to run the official alpine based Docker Image for Postgres.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5432</HostPort>
+        <ContainerPort>5432</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/var/lib/postgresql/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>postgres</Value>
+      <Name>POSTGRES_DB</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>postgres</Value>
+      <Name>POSTGRES_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>POSTGRES_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="DB Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/postgres-alpine/" Mode="rw" Description="Path where the Database Files are stored." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Connection Port" Target="5432" Default="5432" Mode="tcp" Description="Database Connection Port" Type="Port" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="DB Name" Target="POSTGRES_DB" Default="postgres" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="DB User" Target="POSTGRES_USER" Default="postgres" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="DB Password" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
