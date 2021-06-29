@@ -11,7 +11,7 @@
   <Project>https://github.com/Suwayomi/Tachidesk</Project>
   <Overview>This template uses the official Tachidesk Docker image by Suwayomi.&#xD;
 &#xD;
-Tachidesk is a free and open source manga reader that runs extensions built for Tachiyomi.</Overview>
+Tachidesk is a free and open source manga reader that runs extensions built for Tachiyomi made by Suwayomi.</Overview>
   <Category>Downloaders: MediaApp:Books MediaServer:Books</Category>
   <WebUI>http://[IP]:[PORT:4567]/</WebUI>
   <TemplateURL/>
