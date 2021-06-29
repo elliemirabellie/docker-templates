@@ -25,7 +25,7 @@ See https://forums.unraid.net/topic/48383-support-linuxserverio-nextcloud/?do=fi
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1624975579</DateInstalled>
+  <DateInstalled>1624975768</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Template for the docker-clamav image by mkdockx.&#xD;
