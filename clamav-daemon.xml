@@ -25,7 +25,7 @@ See https://forums.unraid.net/topic/48383-support-linuxserverio-nextcloud/?do=fi
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1624975768</DateInstalled>
+  <DateInstalled>1624975934</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Template for the docker-clamav image by mkdockx.&#xD;
@@ -56,6 +56,6 @@ See https://forums.unraid.net/topic/48383-support-linuxserverio-nextcloud/?do=fi
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Virus DB PAth" Target="/var/lib/clamav" Default="/mnt/user/appdata/clamav-service/" Mode="rw" Description="For a persisten Virus Database please input a Path.&#13;&#10;Else it will redownload the DB on each start." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Virus DB PAth" Target="/var/lib/clamav" Default="/mnt/user/appdata/clamav-daemon/" Mode="rw" Description="For a persisten Virus Database please input a Path.&#13;&#10;Else it will redownload the DB on each start." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Connection Port" Target="3310" Default="3310" Mode="tcp" Description="The clamd service is listening on this Port." Type="Port" Display="always" Required="true" Mask="false">3310</Config>
 </Container>
