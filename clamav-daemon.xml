@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>clamav-daemon</Name>
+  <Repository>mkodockx/docker-clamav</Repository>
+  <Registry>https://hub.docker.com/r/mkodockx/docker-clamav</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>update-me</Support>
+  <Project>http://www.clamav.net/</Project>
+  <Overview>Template for the docker-clamav image by mkdockx.&#xD;
+&#xD;
+Dockerized open source antivirus daemons for use with&#xD;
+    file sharing containers like Nextcloud or&#xD;
+    to use it via a REST proxy like @solita made clamav-rest or&#xD;
+    to directly connect to clamav via TCP port 3310&#xD;
+ClamAV daemon as a Docker image. It builds with a current virus database and runs freshclam in the background constantly updating the virus signature database. clamd itself is listening on exposed port 3310.&#xD;
+&#xD;
+See https://forums.unraid.net/topic/48383-support-linuxserverio-nextcloud/?do=findComment&amp;amp;comment=734028 for more information on how to run it with Nextcloud.</Overview>
+  <Category>Security:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://www.clamav.net/assets/clamav-trademark.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624975579</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Template for the docker-clamav image by mkdockx.&#xD;
+&#xD;
+Dockerized open source antivirus daemons for use with&#xD;
+    file sharing containers like Nextcloud or&#xD;
+    to use it via a REST proxy like @solita made clamav-rest or&#xD;
+    to directly connect to clamav via TCP port 3310&#xD;
+ClamAV daemon as a Docker image. It builds with a current virus database and runs freshclam in the background constantly updating the virus signature database. clamd itself is listening on exposed port 3310.&#xD;
+&#xD;
+See https://forums.unraid.net/topic/48383-support-linuxserverio-nextcloud/?do=findComment&amp;amp;comment=734028 for more information on how to run it with Nextcloud.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3310</HostPort>
+        <ContainerPort>3310</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/var/lib/clamav</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Virus DB PAth" Target="/var/lib/clamav" Default="/mnt/user/appdata/clamav-service/" Mode="rw" Description="For a persisten Virus Database please input a Path.&#13;&#10;Else it will redownload the DB on each start." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Connection Port" Target="3310" Default="3310" Mode="tcp" Description="The clamd service is listening on this Port." Type="Port" Display="always" Required="true" Mask="false">3310</Config>
+</Container>
