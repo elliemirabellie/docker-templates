@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tachidesk</Name>
+  <Repository>ghcr.io/suwayomi/tachidesk</Repository>
+  <Registry>https://hub.docker.com/r/suwayomi/tachidesk</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>update-me</Support>
+  <Project>https://github.com/Suwayomi/Tachidesk</Project>
+  <Overview>This template uses the official Tachidesk Docker image by Suwayomi.&#xD;
+&#xD;
+Tachidesk is a free and open source manga reader that runs extensions built for Tachiyomi.</Overview>
+  <Category>Downloaders: MediaApp:Books MediaServer:Books</Category>
+  <WebUI>http://[IP]:[PORT:4567]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Suwayomi/Tachidesk/master/server/src/main/resources/icon/faviconlogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624888168</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This template uses the official Tachidesk Docker image by Suwayomi.&#xD;
+&#xD;
+Tachidesk is a free and open source manga reader that runs extensions built for Tachiyomi.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort/>
+        <ContainerPort>4567</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/home/suwayomi/.local/share/Tachidesk/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/home/suwayomi/.local/share/Tachidesk/manga</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="4567" Default="4567" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/home/suwayomi/.local/share/Tachidesk/" Default="/mnt/user/appdata/tachidesk" Mode="rw" Description="Appdata Path" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Manga" Target="/home/suwayomi/.local/share/Tachidesk/manga" Default="" Mode="rw" Description="Path to the Manga Library" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
