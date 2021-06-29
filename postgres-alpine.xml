@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1624961609</DateInstalled>
+  <DateInstalled>1624962311</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Template to run the official alpine based Docker Image for Postgres.</Description>
@@ -33,7 +33,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/postgres-alpine/</HostDir>
       <ContainerDir>/var/lib/postgresql/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -56,7 +56,7 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="DB Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/postgres-alpine/" Mode="rw" Description="Path where the Database Files are stored." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/postgres-alpine/" Mode="rw" Description="Path where the Database Files are stored." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/postgres-alpine/</Config>
   <Config Name="DB Connection Port" Target="5432" Default="5432" Mode="tcp" Description="Database Connection Port" Type="Port" Display="always" Required="true" Mask="false">5432</Config>
   <Config Name="DB Name" Target="POSTGRES_DB" Default="postgres" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
   <Config Name="DB User" Target="POSTGRES_USER" Default="postgres" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
