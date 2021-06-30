@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>update-me</Support>
+  <Support>https://forums.unraid.net/topic/110770-support-elliemirabellie/</Support>
   <Project>http://www.clamav.net/</Project>
   <Overview>This Template is for creating a persisten clamav daemon for use with Nextcloud's Antivirus for Files Plugin.&#xD;
 It uses the official clamav Docker Image and exposes the clamd daemon on Port 3310. It will also keep a persisten Virus Database if you want it to.&#xD;

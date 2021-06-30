@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>update-me</Support>
+  <Support>https://forums.unraid.net/topic/110770-support-elliemirabellie/</Support>
   <Project>https://www.postgresql.org/</Project>
   <Overview>Template to run the official alpine based Docker Image for Postgres.</Overview>
   <Category>Productivity: Network:Management</Category>

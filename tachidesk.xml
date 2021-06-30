@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>update-me</Support>
+  <Support>https://forums.unraid.net/topic/110770-support-elliemirabellie/</Support>
   <Project>https://github.com/Suwayomi/Tachidesk</Project>
   <Overview>This Template just makes the official Tachidesk Docker Image easily usable for Unraid. &#xD;
 For more Information see the Project Page.&#xD;
