@@ -13,7 +13,7 @@
   <Category>Productivity: Network:Management</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/elliemirabellie/docker-templates/master/images/postgres-alpine.png</Icon>
+  <Icon>https://www.iconattitude.com/icons/open_icon_library/apps/png/256/postgresql.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
