@@ -7,20 +7,20 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/realies/soulseek/</Support>
-  <Project/>
+  <Support/>
+  <Project>http://www.slsknet.org/news/</Project>
   <Overview>Template for realies Soulseek Docker Container:&#xD;
 &#xD;
 &#xD;
 &#x1F433; Soulseek over noVNC Docker container   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container.</Overview>
-  <Category/>
+  <Category>Downloaders: MediaApp:Music</Category>
   <WebUI>http://[IP]:[PORT:6080]/</WebUI>
   <TemplateURL/>
   <Icon>http://www.slsknet.org/news/sites/default/files/slsk_bird.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1627288797</DateInstalled>
+  <DateInstalled>1627289094</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Template for realies Soulseek Docker Container:&#xD;
