@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/110770-support-elliemirabellie/</Support>
   <Project>http://www.slsknet.org/news/</Project>
   <Overview>Template for realies Soulseek Docker Container:&#xD;
 &#xD;
@@ -20,7 +20,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1627289094</DateInstalled>
+  <DateInstalled>1627291712</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Template for realies Soulseek Docker Container:&#xD;
@@ -31,7 +31,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort/>
+        <HostPort>6080</HostPort>
         <ContainerPort>6080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -39,29 +39,29 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/soulseek</HostDir>
       <ContainerDir>/data/.SoulseekQt</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/</HostDir>
       <ContainerDir>/data/Soulseek Downloads/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/soulseek/logs</HostDir>
       <ContainerDir>/data/Soulseek Chat Logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>scale</Value>
       <Name>resize</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>1280x720</Value>
       <Name>resolution</Name>
       <Mode/>
     </Variable>
@@ -77,12 +77,12 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="WebUI" Target="6080" Default="6080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Appdata" Target="/data/.SoulseekQt" Default="/mnt/user/appdata/soulseek" Mode="rw" Description="Appdata Path" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Downloads" Target="/data/Soulseek Downloads/" Default="/mnt/user/" Mode="rw" Description="Downloads Path" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Logs" Target="/data/Soulseek Chat Logs" Default="/mnt/user/appdata/soulseek/logs" Mode="rw" Description="Container Path: /data/Soulseek Chat Logs" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="VNC Resize Mode" Target="resize" Default="scale" Mode="" Description="Optional, can be: auto, scale, remote. Defaults to scale" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="VNC Resolution" Target="resolution" Default="1280x720" Mode="" Description="Set the xfvb resolution. Defaults to 1280x720" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="WebUI" Target="6080" Default="6080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">6080</Config>
+  <Config Name="Appdata" Target="/data/.SoulseekQt" Default="/mnt/user/appdata/soulseek" Mode="rw" Description="Appdata Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/soulseek</Config>
+  <Config Name="Downloads" Target="/data/Soulseek Downloads/" Default="/mnt/user/" Mode="rw" Description="Downloads Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="Logs" Target="/data/Soulseek Chat Logs" Default="/mnt/user/appdata/soulseek/logs" Mode="rw" Description="Container Path: /data/Soulseek Chat Logs" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/soulseek/logs</Config>
+  <Config Name="VNC Resize Mode" Target="resize" Default="scale" Mode="" Description="Optional, can be: auto, scale, remote. Defaults to scale" Type="Variable" Display="advanced-hide" Required="false" Mask="false">scale</Config>
+  <Config Name="VNC Resolution" Target="resolution" Default="1280x720" Mode="" Description="Set the xfvb resolution. Defaults to 1280x720" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1280x720</Config>
   <Config Name="PUID" Target="puid" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="pgid" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
 </Container>
