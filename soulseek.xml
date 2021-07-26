@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>soulseek</Name>
+  <Repository>realies/soulseek</Repository>
+  <Registry>https://hub.docker.com/r/realies/soulseek/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/realies/soulseek/</Support>
+  <Project/>
+  <Overview>Template for realies Soulseek Docker Container:&#xD;
+&#xD;
+&#xD;
+&#x1F433; Soulseek over noVNC Docker container   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6080]/</WebUI>
+  <TemplateURL/>
+  <Icon>http://www.slsknet.org/news/sites/default/files/slsk_bird.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1627288797</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Template for realies Soulseek Docker Container:&#xD;
+&#xD;
+&#xD;
+&#x1F433; Soulseek over noVNC Docker container   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort/>
+        <ContainerPort>6080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data/.SoulseekQt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data/Soulseek Downloads/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data/Soulseek Chat Logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>resize</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>resolution</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>puid</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>pgid</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI" Target="6080" Default="6080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Appdata" Target="/data/.SoulseekQt" Default="/mnt/user/appdata/soulseek" Mode="rw" Description="Appdata Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Downloads" Target="/data/Soulseek Downloads/" Default="/mnt/user/" Mode="rw" Description="Downloads Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Logs" Target="/data/Soulseek Chat Logs" Default="/mnt/user/appdata/soulseek/logs" Mode="rw" Description="Container Path: /data/Soulseek Chat Logs" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="VNC Resize Mode" Target="resize" Default="scale" Mode="" Description="Optional, can be: auto, scale, remote. Defaults to scale" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="VNC Resolution" Target="resolution" Default="1280x720" Mode="" Description="Set the xfvb resolution. Defaults to 1280x720" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="puid" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="pgid" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+</Container>

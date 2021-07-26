@@ -23,7 +23,7 @@ Ability to read and write Tachiyomi compatible backups and syncing is a planned 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1625038272</DateInstalled>
+  <DateInstalled>1625038273</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This Template just makes the official Tachidesk Docker Image easily usable for Unraid. &#xD;
@@ -58,6 +58,6 @@ Ability to read and write Tachiyomi compatible backups and syncing is a planned 
   <Environment/>
   <Labels/>
   <Config Name="WebUI" Target="4567" Default="4567" Mode="tcp" Description="Container Port: 4567" Type="Port" Display="always" Required="true" Mask="false">4568</Config>
-  <Config Name="Appdata" Target="/home/suwayomi/.local/share/Tachidesk/" Default="/mnt/user/appdata/tachidesk/" Mode="rw" Description="Appdata Share" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Appdata" Target="/home/suwayomi/.local/share/Tachidesk/" Default="/mnt/user/appdata/tachidesk/" Mode="rw" Description="Appdata Path" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Manga Library" Target="/home/suwayomi/.local/share/Tachidesk/manga" Default="" Mode="rw" Description="Path where Mangas are stored. If none is given, they will be downloaded into the Appdata Folder" Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
